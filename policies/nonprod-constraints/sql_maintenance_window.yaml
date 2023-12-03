@@ -15,25 +15,14 @@
 #
 
 apiVersion: constraints.gatekeeper.sh/v1alpha1
-kind: GCPRestrictedFirewallRulesConstraintV1
+kind: GCPSQLMaintenanceWindowConstraintV1
 metadata:
-  name: restrict-firewall-rule-ssh-world-open
+  name: gcp-sql-maintenance-window-v1
   annotations:
-    bundles.validator.forsetisecurity.org/scorecard-v1: security
-    bundles.validator.forsetisecurity.org/cis-v1.1: 3.06
-    description: Checks for open firewall rules allowing SSH from the internet.
+    description: Checks that every Cloud SQL instance has a specified maintenance
+      window set.
 spec:
   severity: high
   match:
     ancestries:
     - "organizations/**"
-  parameters:
-    mode: "denylist"
-    rules:
-    - direction: "INGRESS"
-      source_ranges:
-      - "0.0.0.0/0"
-      port: "22"
-      protocol: "tcp"
-      enabled: "true"
-      rule_type: "allowed"
