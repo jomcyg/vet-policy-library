@@ -21,7 +21,9 @@ metadata:
 spec:
   severity: high
   parameters:
-    mode: "allowlist"
+    mode: "denylist"
     zones:
-    - asia-east1-b
+    - asia-south1-a
+    - asia-south1-b
+    - asia-south1-c
     exemptions: []
