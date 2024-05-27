@@ -22,6 +22,8 @@ spec:
   severity: high
   parameters:
     mode: "denylist"
-    region:
-    - asia-south1
+    zone:
+    - asia-south1-a
+    - asia-south1-b
+    - asia-south1-c
     exemptions: []
