@@ -10,7 +10,7 @@ spec:
     ancestries:
     - "organizations/**"
   parameters:
-    mode: "allowlist"
+    mode: "denylist"
     resource_type_list:
     - sqladmin.googleapis.com/Instance
     - compute.googleapis.com/Instance
