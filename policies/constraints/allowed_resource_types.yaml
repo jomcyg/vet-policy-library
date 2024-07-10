@@ -13,5 +13,4 @@ spec:
     mode: "denylist"
     resource_type_list:
     - sqladmin.googleapis.com/Instance
-    - compute.googleapis.com/Instance
     - dataproc.googleapis.com/Job

@@ -42,15 +42,15 @@ spec:
     # A violation is raised if the label value does not match the pattern passed as a parameter here.
     mandatory_labels:
     - "app-name": "^[0-9a-zA-Z-]+$"
-    - "service-owner": "^[0-9a-zA-Z-]+$"
+    # - "service-owner": "^[0-9a-zA-Z-]+$"
     - "env": "^(nonprod)$"
-    - "sub-env": "^(shared|dev|qa|uat|stg)$"
-    - "customer": "^(jmcorg)$"
-    - "business-unit": "^(jmcorg)$"
-    - "requestor": "^[0-9a-zA-Z-]+$"
-    - "sensitive": "^(true|false)$"
-    - "ticket-id": "^[0-9a-zA-Z-]+$"
-    - "lead-spoc": "^[0-9a-zA-Z-]+$"   
+    # - "sub-env": "^(shared|dev|qa|uat|stg)$"
+    # - "customer": "^(jmcorg)$"
+    # - "business-unit": "^(jmcorg)$"
+    # - "requestor": "^[0-9a-zA-Z-]+$"
+    # - "sensitive": "^(true|false)$"
+    # - "ticket-id": "^[0-9a-zA-Z-]+$"
+    # - "lead-spoc": "^[0-9a-zA-Z-]+$"   
 
     allow_list_labels:
     - label_key: "cost-center"
@@ -84,18 +84,18 @@ spec:
     - cloudresourcemanager.googleapis.com/Project
     - storage.googleapis.com/Bucket
     - compute.googleapis.com/Instance
-    - compute.googleapis.com/Image
-    - compute.googleapis.com/Disk
-    - compute.googleapis.com/Snapshot
-    - bigtableadmin.googleapis.com/Instance
-    - sqladmin.googleapis.com/Instance
-    - dataproc.googleapis.com/Job
-    - dataproc.googleapis.com/Cluster
-    - container.googleapis.com/Cluster
-    - bigquery.googleapis.com/Dataset
-    - bigquery.googleapis.com/Table
-    - cloudkms.googleapis.com/CryptoKey
-    - dns.googleapis.com/ManagedZone
-    - file.googleapis.com/Instance
-    - cloudfunctions.googleapis.com/CloudFunction
-    - pubsub.googleapis.com/Topic
+    # - compute.googleapis.com/Image
+    # - compute.googleapis.com/Disk
+    # - compute.googleapis.com/Snapshot
+    # - bigtableadmin.googleapis.com/Instance
+    # - sqladmin.googleapis.com/Instance
+    # - dataproc.googleapis.com/Job
+    # - dataproc.googleapis.com/Cluster
+    # - container.googleapis.com/Cluster
+    # - bigquery.googleapis.com/Dataset
+    # - bigquery.googleapis.com/Table
+    # - cloudkms.googleapis.com/CryptoKey
+    # - dns.googleapis.com/ManagedZone
+    # - file.googleapis.com/Instance
+    # - cloudfunctions.googleapis.com/CloudFunction
+    # - pubsub.googleapis.com/Topic
