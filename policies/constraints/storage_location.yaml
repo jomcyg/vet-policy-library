@@ -31,4 +31,5 @@ spec:
     - asia-southeast1
     - asia-south1
     - asia-south2
+    - ASIA
     exemptions: []
