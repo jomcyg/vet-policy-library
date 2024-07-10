@@ -22,6 +22,6 @@ spec:
   severity: high
   parameters:
     authorized_networks: ["35.187.118.0/24"]
-    #Meesho Prod Primary Pods Ranges
-    #Meesho Prod Primary Nodes Ranges
-    #Meesho Prod Serverless VPC Ranges
+    #jmcorg Prod Primary Pods Ranges
+    #jmcorg Prod Primary Nodes Ranges
+    #jmcorg Prod Serverless VPC Ranges
